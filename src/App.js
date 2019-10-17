@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from './components/Contact';
+import ContactList from './components/ContactList';
 import './App.css';
 
 const name = "Dwayne Ferguson";
@@ -23,6 +24,7 @@ function App() {
       <Contact name={name} avatar={avatar} status={status}/> 
       <Contact name={name1} avatar={avatar1} status={status1}/>
       <Contact name={name2} avatar={avatar2} status={status2}/>
+      <ContactList/>
       </header>
     </div>
   );
