@@ -5,7 +5,7 @@ class Contact extends React.Component {
   constructor(props){
     super(props);
       this.state = {
-        status: props.online
+        status: false
       };
   }  
 
@@ -22,7 +22,7 @@ class Contact extends React.Component {
               const newStatus = !this.state.status;
               this.setState({status: newStatus});
             }}/>
-            {this.props.status ? "online" : "offline"}</p>
+            {this.state.status ? "online" : "offline"}</p>
             </div>
         </div>
       </div>
